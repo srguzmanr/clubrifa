@@ -9,7 +9,7 @@ interface Boleto {
 interface Props {
   boletos: Boleto[];
   precioBoleto: number;
-  rifaId: string;
+  rifaId?: string;  
   rifaNombre: string;
   compradorId: string;
   onExito: () => void;
@@ -19,7 +19,6 @@ interface Props {
 export function PantallaPago({
   boletos,
   precioBoleto,
-  _rifaId,
   rifaNombre,
   compradorId,
   onExito,
