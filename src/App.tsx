@@ -171,7 +171,7 @@ function App() {
       {/* Role-based content */}
       {usuario.rol === 'admin' && <PanelAdmin />}
 
-      {usuario.rol === 'vendedor' && <PanelPromotor vendedorId={usuario.id} />}
+      {usuario.rol === 'vendedor' && <PanelPromotor vendedorId={usuario.id} onVolver={() => {}} />}
 
       {usuario.rol === 'participante' && (
         <>
