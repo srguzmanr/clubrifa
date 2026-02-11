@@ -19,7 +19,7 @@ interface Props {
 export function PantallaPago({
   boletos,
   precioBoleto,
-  rifaId,
+  _rifaId,
   rifaNombre,
   compradorId,
   onExito,
